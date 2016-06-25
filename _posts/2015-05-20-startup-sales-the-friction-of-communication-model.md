@@ -57,7 +57,7 @@ _The best starting point is a Courtship customer._ They are aware of the problem
 
 ## Path of Least Resistance
 
-[bctt tweet="Focus on the simplest and most straightforward first."]
+{% twitter oembed https://twitter.com/disqovery/status/746791189282721793 %}
 
 ![Table 1](/images/2015/05/Table-1-1024x335.png)
 
