@@ -37,7 +37,7 @@ These reasons stuck with me, _written in that order_, as going from easiest to h
 
 ## The Solution
 
-[bctt tweet="Categorize customers by how much communication you'll have to do."]
+{% twitter oembed https://twitter.com/disqovery/status/746792446101753856 %}
 
 [![Pyramid of sales friction](/images/2015/05/Screenshot-2015-05-19-16.52.58.png)](/images/2015/05/Screenshot-2015-05-19-16.52.58.png)
 
