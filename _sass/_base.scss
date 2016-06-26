@@ -198,3 +198,17 @@ pre {
         fill: $grey-color;
     }
 }
+
+/**
+ * Image captions
+ */
+img + em {
+  text-align: center;
+}
+
+/**
+ * Embedded tweets
+ */
+.embed iframe {
+  width: 100%;
+}

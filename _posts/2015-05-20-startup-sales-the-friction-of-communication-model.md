@@ -39,7 +39,8 @@ These reasons stuck with me, _written in that order_, as going from easiest to h
 
 {% twitter oembed https://twitter.com/disqovery/status/746792446101753856 %}
 
-[![Pyramid of sales friction](/images/2015/05/Screenshot-2015-05-19-16.52.58.png)](/images/2015/05/Screenshot-2015-05-19-16.52.58.png)
+![Pyramid of sales friction](/images/2015/05/Screenshot-2015-05-19-16.52.58.png)
+*Pyramid of sales friction*
 
 This structure forms a pyramid of lowest to highest friction for making the sale. High friction customers require more work, and are not a good place for a startup with limited case studies and sales resources.
 
