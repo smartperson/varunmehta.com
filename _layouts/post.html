@@ -3,7 +3,7 @@ layout: default
 ---
 <article class="post dq-blog--blogpost" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="dq-back">
-    <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="index.html" title="go back" role="button">
+    <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="/" title="go back" role="button">
       <i class="material-icons" role="presentation">arrow_back</i>
     </a>
   </div>
@@ -19,16 +19,16 @@ layout: default
           <span>2 days ago</span>
         </div>
         <div class="section-spacer"></div>
-        <div class="meta__favorites">
+        <!--<div class="meta__favorites">
           425 <i class="material-icons" role="presentation">favorite</i>
           <span class="visuallyhidden">favorites</span>
         </div>
         <div>
           <i class="material-icons" role="presentation">bookmark</i>
           <span class="visuallyhidden">bookmark</span>
-        </div>
+        </div>-->
         <div>
-          <i class="material-icons" role="presentation">share</i>
+          <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via=disqovery"><i class="material-icons" role="presentation">share</i></a>
           <span class="visuallyhidden">share</span>
         </div>
       </div>
@@ -38,36 +38,40 @@ layout: default
     </div>
 
     <nav class="dq-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
-      <a href="index.html" class="dq-nav__button">
+      {% if page.next.url %}
+      <a href="{{page.next.url}}" class="dq-nav__button">
         <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
           <i class="material-icons">arrow_back</i>
         </button>
         Newer
       </a>
+      {% endif %}
       <div class="section-spacer"></div>
-      <a href="index.html" class="dq-nav__button">
+      {% if page.previous.url %}
+      <a href="{{page.previous.url}}" class="dq-nav__button">
         Older
         <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
           <i class="material-icons">arrow_forward</i>
         </button>
       </a>
+      {% endif %}
     </nav>
   </div>
   <footer class="mdl-mini-footer">
     <div class="mdl-mini-footer--left-section">
-      <button class="mdl-mini-footer--social-btn social-btn social-btn__twitter">
+      <a href="https://www.twitter.com/disqovery"><button class="mdl-mini-footer--social-btn social-btn social-btn__twitter">
         <span class="visuallyhidden">Twitter</span>
-      </button>
-      <button class="mdl-mini-footer--social-btn social-btn social-btn__blogger">
+      </button></a>
+      <!--<button class="mdl-mini-footer--social-btn social-btn social-btn__blogger">
         <span class="visuallyhidden">Facebook</span>
       </button>
       <button class="mdl-mini-footer--social-btn social-btn social-btn__gplus">
         <span class="visuallyhidden">Google Plus</span>
-      </button>
+      </button>-->
     </div>
     <div class="mdl-mini-footer--right-section">
       <button class="mdl-mini-footer--social-btn social-btn__share">
-        <i class="material-icons" role="presentation">share</i>
+        <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via=disqovery"><i class="material-icons" role="presentation">share</i></a>
         <span class="visuallyhidden">share</span>
       </button>
     </div>
