@@ -7,6 +7,8 @@ author: Varun
 author_login: admin
 author_email: varun@disqovery.com
 author_url: http://www.disqovery.com
+image:
+  feature: dj-scratch.jpg
 wordpress_id: 543
 wordpress_url: http://blog.disqovery.com/?p=543
 date: '2015-05-20 07:48:10 -0400'

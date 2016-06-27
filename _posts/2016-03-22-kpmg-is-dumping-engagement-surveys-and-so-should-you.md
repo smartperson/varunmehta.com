@@ -3,10 +3,15 @@ layout: post
 status: publish
 published: true
 title: KPMG is dumping engagement surveys, and so should you
+subtitle: Survey says? Let's do something that works, or nothing at all.
 author: Varun
 author_login: admin
 author_email: varun@disqovery.com
 author_url: http://www.disqovery.com
+image:
+  feature: Richard-Dawson.jpg
+  credit:
+  creditlink:
 wordpress_id: 571
 wordpress_url: http://blog.disqovery.com/?p=571
 date: '2016-03-22 10:48:23 -0400'

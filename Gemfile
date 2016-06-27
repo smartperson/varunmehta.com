@@ -21,4 +21,5 @@ gem "jekyll", "3.2.0.pre.beta1"
 # end
 group :jekyll_plugins do
   gem 'jekyll-twitter-plugin'
+  gem 'jekyll-timeago'
 end

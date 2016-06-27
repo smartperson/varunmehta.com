@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: How I perform as a sole startup founder
+image:
+  feature: atlas.jpg
 author: Varun
 author_login: admin
 author_email: varun@disqovery.com

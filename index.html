@@ -2,22 +2,25 @@
 layout: default
 ---
 
-<div class="home">
+    <div class="dq-blog__posts mdl-grid">
+      {% for post in site.posts %}
+        {% if forloop.index == 1 %}
+        <div class="mdl-card feature-pic mdl-cell mdl-cell--8-col">
+        {% else %}
+        <div class="mdl-card feature-pic mdl-cell mdl-cell--12-col">
+        {% endif %}
+          {% include post-info.html %}
+        </div>
+        {% if forloop.index == 1 %}
+          {% include company-card.html %}
+        {% endif %}
+        <!--<li>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+          </h2>
+        </li> -->
+      {% endfor %}
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
 </div>
