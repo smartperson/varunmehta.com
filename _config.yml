@@ -23,7 +23,7 @@ github_username:  smartperson
 
 # Build settings
 markdown: kramdown
-gems: ['jekyll-twitter-plugin']
+gems: ['jekyll-twitter-plugin', 'jekyll-timeago']
 
 twitter:
   consumer_key: dkor8YimCdch8aWZlkydBQ
