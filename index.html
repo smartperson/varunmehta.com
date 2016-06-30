@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-
+<div class="home dq-blog mdl-layout mdl-js-layout has-drawer is-upgraded">
+  <main class="mdl-layout__content">
     <div class="dq-blog__posts mdl-grid">
       {% for post in site.posts %}
         {% if forloop.index == 1 %}
@@ -22,5 +23,7 @@ layout: default
           </h2>
         </li> -->
       {% endfor %}
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    </div>
+  </main>
 </div>

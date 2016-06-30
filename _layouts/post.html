@@ -1,85 +1,85 @@
 ---
 layout: default
 ---
-<article class="post dq-blog--blogpost" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="dq-back">
-    <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="/" title="go back" role="button">
-      <i class="material-icons" role="presentation">arrow_back</i>
-    </a>
-  </div>
-  <div class="dq-blog__posts mdl-grid">
-    <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
-      <div class="mdl-card__media mdl-color-text--grey-50" style="background-image:url(/images/features/{{page.image.feature}})">
-        <h3>{{ page.title | escape }}</h3>
+<div class="home dq-blog dq-blog--blogpost mdl-layout mdl-js-layout has-drawer is-upgraded">
+  <main class="mdl-layout__content">
+    <div class="dq-back">
+      <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="/" title="go back" role="button">
+        <i class="material-icons" role="presentation">arrow_back</i>
+      </a>
+    </div>
+    <div class="dq-blog__posts mdl-grid">
+      <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+        <div class="mdl-card__media mdl-color-text--grey-50" style="background-image:url(/images/features/{{page.image.feature}})">
+          <h3>{{ page.title | escape }}</h3>
+          {% if page.image.credit %}
+            <div class="image-credit">Credit {{page.image.credit}}</div>
+          {% endif %}
+        </div>
+        <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+          <div class="minilogo" style="background-image: url(/images/theme/{{page.author}}.jpg)"></div>
+          <div>
+            <strong>{{page.author}}</strong>
+            <span>{{page.date | timeago}}</span>
+          </div>
+          <div class="section-spacer"></div>
+          <!--<div class="meta__favorites">
+            425 <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+          </div>
+          <div>
+            <i class="material-icons" role="presentation">bookmark</i>
+            <span class="visuallyhidden">bookmark</span>
+          </div>-->
+          <div>
+            <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via=disqovery"><i class="material-icons" role="presentation">share</i></a>
+            <span class="visuallyhidden">share</span>
+          </div>
+        </div>
+        <div class="mdl-color-text--grey-700 mdl-card__supporting-text">
+          {{content}}
+        </div>
       </div>
-      <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
-        <div class="minilogo" style="background-image: url(/images/theme/{{page.author}}.jpg)"></div>
-        <div>
-          <strong>{{page.author}}</strong>
-          <span>{{page.date | timeago}}</span>
-        </div>
+
+      <nav class="dq-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+        {% if page.next.url %}
+        <a href="{{page.next.url}}" class="dq-nav__button">
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+            <i class="material-icons">arrow_back</i>
+          </button>
+          Newer
+        </a>
+        {% endif %}
         <div class="section-spacer"></div>
-        <!--<div class="meta__favorites">
-          425 <i class="material-icons" role="presentation">favorite</i>
-          <span class="visuallyhidden">favorites</span>
-        </div>
-        <div>
-          <i class="material-icons" role="presentation">bookmark</i>
-          <span class="visuallyhidden">bookmark</span>
-        </div>-->
-        <div>
+        {% if page.previous.url %}
+        <a href="{{page.previous.url}}" class="dq-nav__button">
+          Older
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+            <i class="material-icons">arrow_forward</i>
+          </button>
+        </a>
+        {% endif %}
+      </nav>
+    </div>
+    <footer class="mdl-mini-footer">
+      <div class="mdl-mini-footer--left-section">
+        <a href="https://www.twitter.com/disqovery"><button class="mdl-mini-footer--social-btn social-btn social-btn__twitter">
+          <span class="visuallyhidden">Twitter</span>
+        </button></a>
+        <!--<button class="mdl-mini-footer--social-btn social-btn social-btn__blogger">
+          <span class="visuallyhidden">Facebook</span>
+        </button>
+        <button class="mdl-mini-footer--social-btn social-btn social-btn__gplus">
+          <span class="visuallyhidden">Google Plus</span>
+        </button>-->
+      </div>
+      <div class="mdl-mini-footer--right-section">
+        <button class="mdl-mini-footer--social-btn social-btn__share">
           <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via=disqovery"><i class="material-icons" role="presentation">share</i></a>
           <span class="visuallyhidden">share</span>
-        </div>
-      </div>
-      <div class="mdl-color-text--grey-700 mdl-card__supporting-text">
-        {{content}}
-      </div>
-    </div>
-
-    <nav class="dq-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
-      {% if page.next.url %}
-      <a href="{{page.next.url}}" class="dq-nav__button">
-        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-          <i class="material-icons">arrow_back</i>
         </button>
-        Newer
-      </a>
-      {% endif %}
-      <div class="section-spacer"></div>
-      {% if page.previous.url %}
-      <a href="{{page.previous.url}}" class="dq-nav__button">
-        Older
-        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-          <i class="material-icons">arrow_forward</i>
-        </button>
-      </a>
-      {% endif %}
-    </nav>
-  </div>
-  <footer class="mdl-mini-footer">
-    <div class="mdl-mini-footer--left-section">
-      <a href="https://www.twitter.com/disqovery"><button class="mdl-mini-footer--social-btn social-btn social-btn__twitter">
-        <span class="visuallyhidden">Twitter</span>
-      </button></a>
-      <!--<button class="mdl-mini-footer--social-btn social-btn social-btn__blogger">
-        <span class="visuallyhidden">Facebook</span>
-      </button>
-      <button class="mdl-mini-footer--social-btn social-btn social-btn__gplus">
-        <span class="visuallyhidden">Google Plus</span>
-      </button>-->
-    </div>
-    <div class="mdl-mini-footer--right-section">
-      <button class="mdl-mini-footer--social-btn social-btn__share">
-        <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via=disqovery"><i class="material-icons" role="presentation">share</i></a>
-        <span class="visuallyhidden">share</span>
-      </button>
-    </div>
-  </footer>
-
-<!--  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header> -->
-
-</article>
+      </div>
+    </footer>
+  </main>
+  <div class="mdl-layout__obfuscator"></div>
+</div>

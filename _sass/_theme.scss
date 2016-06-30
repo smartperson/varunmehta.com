@@ -1,15 +1,15 @@
-body {
+body:before {
   background-color: darkblue;
   background-size: cover;
   background-attachment: fixed;
-  //content: '';
+  content: '';
   will-change: transform;
   z-index: -1;
-  //left: 0;
-  //right: 0;
-  //bottom: 0;
-  //top: 0;
-  //position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  position: fixed;
   background-image: url('/images/theme/bg_2048.jpg');
   @media (max-width: 512px)  and (min-resolution: 1.5dppx),
          (max-width: 1024px) and (max-resolution: 1.5dppx) {
@@ -19,6 +19,10 @@ body {
          (min-width: 1025px) and (max-width: 2048px) and (max-resolution: 1.5dppx)  {
       background-image: url('/images/theme/bg_2880.jpg');
   }
+}
+
+body .dq-blog {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
 }
 
 .dq-back .mdl-button {
@@ -74,6 +78,7 @@ body {
   min-height: 64px;
   display: flex;
   align-items: center;
+  box-sizing: border-box;
 }
 .dq-blog .mdl-card__supporting-text strong {
   font-weight: 400;
@@ -122,9 +127,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.dq-blog.is-small-screen .dq-blog__posts > .mdl-card.coffee-pic {
-  order: 0;
-}
+
 .dq-blog.is-small-screen .dq-blog__posts > .mdl-card.something-else {
   order: -1;
 }
@@ -223,7 +226,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.dq-blog--blogpost .meta + .mdl-card__supporting-text p {
+.dq-blog--blogpost .meta + .mdl-card__supporting-text p,ul,ol {
   max-width: 512px;
   margin: 16px auto;
   font-size: 16px;
