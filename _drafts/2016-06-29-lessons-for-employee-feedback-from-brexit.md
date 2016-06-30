@@ -12,8 +12,12 @@ _This sounds weird, right? I was surprised to find a connection here, and I just
 
 **tl;dr: people need a constructive outlet for their feedback, and they need to feel like they are being heard. If you don't give them an outlet, they will make their own, and you probably won't like the results. This happened during Brexit, and it can happen to your company.**
 
+Why it matters
+--------------
+
+
 Big global events by referendum
----
+-------------------------------
 Whether you agree with it or not, the Brexit is happening. It is an historic period in the history of the UK and the EU, and it will be 
 
 * Rare to decide such major diplomatic issues by referendum. There has never been a national referendum in the United States.

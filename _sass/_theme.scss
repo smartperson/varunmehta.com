@@ -81,7 +81,7 @@ body .dq-blog {
   box-sizing: border-box;
 }
 .dq-blog .mdl-card__supporting-text strong {
-  font-weight: 400;
+  font-weight: 700;
 }
 .dq-blog .mdl-card__media ~ .mdl-card__supporting-text {
   min-height: 64px;
@@ -213,6 +213,7 @@ body .dq-blog {
   background-blend-mode: color-burn;
   background-color: #888; //grey
   height: 280px;
+  position: relative;
 }
 
 .dq-blog--blogpost .comments {
