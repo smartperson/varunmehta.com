@@ -31,7 +31,7 @@ This got me thinking: a lot of what makes a good waiter also makes for a good pe
 
 This concept isn't new. There are great examples, including from the military, in the book *[Leaders Eat Last](https://www.amazon.com/gp/product/1591845327/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1591845327&linkCode=as2&tag=varmeh-20&linkId=5c7f7808ddd31482a4d03f69428f025e)*. *As an aside, the author Simon Sinek, has a great TED talk you must check out.*
 
-Aida over at the POS Sector put together 
+Bruce Buschell over at [The New York Times](http://boss.blogs.nytimes.com/2009/10/29/one-hundred-things-restaurant-staffers-should-never-do-part-one/?_r=0) put together 
 
 1. Do not let anyone enter the restaurant without a warm greeting.
 8. Do not interrupt a conversation. For any reason. Especially not to recite specials. Wait for the right moment.
