@@ -5,8 +5,8 @@ title: Real Leaders Work For Tips
 subtitle: What you can learn from hospitality and service
 author: Varun
 image:
-  feature: no-tip.jpg
-  credit:
+  feature: tip-jar.jpg
+  credit: Dave Dugdale
   creditlink:
 ---
 
@@ -25,7 +25,13 @@ _Alternate titles include: "Real leaders serve," and "What managers can learn fr
     * They are extremely attentive to the needs of their people, and make sure to periodicayl ask fr verbal feedback ("Is everything okay?") as well as observe non-verbal feedback (Are the plates clean?)
     * They catch issues early and make course correction to keep everyone as happy as possible.    
 
-I don't often end up in fancy restaurants, preferring a simple barbecue joint or 
+I don't often end up in fancy restaurants, but when I do, I'm impressed by the service I receive. A few friends have previously worked as servers, so I try to tip generously, with a little extra for the truly exceptional.
+
+This got me thinking: a lot of what makes a good waiter also makes for a good people manager. In any talent-driven organization, your employees are a precious resource, and in many ways can be compared to diners at high-quality restaurants. To get the best results out of them (tips), you need to provide them with exceptional service.
+
+This concept isn't new. There are great examples, including from the military, in the book *[Leaders Eat Last](https://www.amazon.com/gp/product/1591845327/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1591845327&linkCode=as2&tag=varmeh-20&linkId=5c7f7808ddd31482a4d03f69428f025e)*. *As an aside, the author Simon Sinek, has a great TED talk you must check out.*
+
+Aida over at the POS Sector put together 
 
 1. Do not let anyone enter the restaurant without a warm greeting.
 8. Do not interrupt a conversation. For any reason. Especially not to recite specials. Wait for the right moment.
