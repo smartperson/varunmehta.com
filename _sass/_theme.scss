@@ -32,28 +32,27 @@ body .dq-blog {
 .dq-blog .dq-blog__posts {
   max-width: 900px;
   padding: 0;
-  display: flex;
+  @include display(flex);
   width: 100%;
   margin: 0 auto;
-  flex-shrink: 0;
+  @include flex-shrink(0);
 }
 
 .dq-blog.mdl-layout .mdl-layout__content {
   padding-top: 230px;
   position: relative;
-  -webkit-overflow-scrolling: touch;
 }
 .dq-blog .mdl-card {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
+  @include display(flex);
+  @include flex-direction(column);
+  @include align-items(stretch);
   min-height: 360px;
 }
 
 .dq-blog .mdl-card__title {
   background-color: #263238;
   padding: 16px;
-  flex-grow: 1;
+  @include flex-grow(1);
 }
 .dq-blog .mdl-card__media {
   box-sizing: border-box;
@@ -62,10 +61,10 @@ body .dq-blog {
   background-blend-mode: color-burn;
   background-color: #aaa; //grey
   padding: 24px;
-  display: flex;
-  flex-grow: 1;
-  flex-direction: row;
-  align-items: flex-end;
+  @include display(flex);
+  @include flex-grow(1);
+  @include flex-direction(row);
+  @include align-items(flex-end);
   cursor: pointer;
 }
 .dq-blog .mdl-card__media a,
@@ -76,8 +75,8 @@ body .dq-blog {
   width: 100%;
   padding: 16px;
   min-height: 64px;
-  display: flex;
-  align-items: center;
+  @include display(flex);
+  @include align-items(center);
   box-sizing: border-box;
 }
 .dq-blog .mdl-card__supporting-text strong {
@@ -100,14 +99,14 @@ body .dq-blog {
 .dq-blog .meta {
   box-sizing: border-box;
   padding: 16px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
+  @include display(flex);
+  @include flex-direction(row);
+  @include align-items(center);
+  @include justify-content(flex-start);
   height: auto;
 }
 .dq-blog .meta > .meta__favorites{
-  flex-direction: row;
+  @include flex-direction(row);
   margin: 0 8px;
   font-size: 13px;
   font-weight: 500;
@@ -118,14 +117,14 @@ body .dq-blog {
   margin-left: 12px;
 }
 .dq-blog .mdl-card .meta.meta--fill {
-  justify-content: space-between;
+  @include justify-content(space-between);
 }
 .dq-blog .meta > *:first-child {
   margin-right: 16px;
 }
 .dq-blog .meta > * {
-  display: flex;
-  flex-direction: column;
+  @include display(flex);
+  @include flex-direction(column);
 }
 
 .dq-blog.is-small-screen .dq-blog__posts > .mdl-card.something-else {
@@ -133,16 +132,16 @@ body .dq-blog {
 }
 
 .dq-blog .something-else .mdl-card__media {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include display(flex);
+  @include flex-direction(column);
+  @include justify-content(center);
+  @include align-items(center);
 }
 .dq-blog .something-else > button {
   position: absolute;
   top: 0;
   right: 28px;
-  transform: translate(0px, -28px);
+  @include transform(translate(0px, -28px));
 }
 .dq-blog .something-else .mdl-card__media {
   font-size: 13px;
@@ -163,10 +162,10 @@ body .dq-blog {
 
 .dq-blog .dq-blog__posts > .dq-nav {
   margin: 12px 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  @include display(flex);
+  @include flex-direction(row);
+  @include justify-content(space-between);
+  @include align-items(center);
   color: white;
   font-weight: 500;
 }
@@ -220,12 +219,12 @@ body .dq-blog {
   background-color: #EEE;
 }
 .dq-blog--blogpost .meta > * {
-  align-items: left;
+  @include align-items(left);
 }
 .dq-blog--blogpost .meta + .mdl-card__supporting-text {
   border: 0;
-  display: flex;
-  flex-direction: column;
+  @include display(flex);
+  @include flex-direction(column);
 }
 .dq-blog--blogpost .meta + .mdl-card__supporting-text p,ul,ol {
   max-width: 650px;
@@ -235,20 +234,20 @@ body .dq-blog {
 }
 
 .dq-blog--blogpost .comments {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: stretch;
+  @include display(flex);
+  @include flex-direction(column);
+  @include justify-content(flex-start);
+  @include align-items(stretch);
   padding: 32px;
   box-sizing: border-box;
 }
 .dq-blog--blogpost .comments > form {
-  display: flex;
-  flex-direction: row;
+  @include display(flex);
+  @include flex-direction(row);
   margin-bottom: 16px;
 }
 .dq-blog--blogpost .comments > form .mdl-textfield {
-  flex-grow: 1;
+  @include flex-grow(1);
   margin-right: 16px;
   color: rgb(97, 97, 97);
 }
@@ -268,14 +267,14 @@ body .dq-blog {
   color: white;
 }
 .dq-blog--blogpost .comments .comment {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
+  @include display(flex);
+  @include flex-direction(column);
+  @include align-items(stretch);
 }
 .dq-blog--blogpost .comments .comment > .comment__header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  @include display(flex);
+  @include flex-direction(row);
+  @include align-items(center);
   margin-bottom: 16px;
 }
 .dq-blog--blogpost .comments .comment > .comment__header > .comment__avatar {
@@ -285,18 +284,18 @@ body .dq-blog {
   margin-right: 16px;
 }
 .dq-blog--blogpost .comments .comment > .comment__header > .comment__author {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
+  @include flex-grow(1);
+  @include display(flex);
+  @include flex-direction(column);
 }
 .dq-blog--blogpost .comments .comment > .comment__text {
   line-height: 1.5em;
 }
 .dq-blog--blogpost .comments .comment > .comment__actions {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+  @include display(flex);
+  @include flex-direction(row);
+  @include justify-content(flex-start);
+  @include align-items(center);
   font-size: 0.8em;
   margin-top: 16px;
 }
@@ -317,7 +316,7 @@ body .dq-blog {
   z-index: 9999;
 }
 .dq-blog .section-spacer {
-  flex-grow: 1;
+  @include flex-grow(1);
 }
 .dq-blog .something-else {
   overflow: visible;
@@ -338,7 +337,7 @@ body .dq-blog {
 
 /* Fixes for IE 10 */
 .mdl-grid {
-  display: flex !important;
+  @include display(flex);// !important;
 }
 
 .social-btn {
@@ -371,7 +370,7 @@ body .dq-blog {
   margin-top: 80px;
   height: 120px;
   padding: 40px;
-  align-items: center;
+  @include align-items(center);
   background-color: white;
   box-sizing: border-box;
 }
