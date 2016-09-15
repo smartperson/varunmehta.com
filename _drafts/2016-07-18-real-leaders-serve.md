@@ -25,6 +25,17 @@ _Alternate titles include: "Real leaders serve," and "What managers can learn fr
     * They are extremely attentive to the needs of their people, and make sure to periodicayl ask for verbal feedback ("Is everything okay?") as well as observe non-verbal feedback (Are the plates clean?)
     * They catch issues early and make course correction to keep everyone as happy as possible.    
 
+### What do you want from your people? From yourself?
+
+It's important to establish your high-level goals as an effective manager. Here are some items on my list, which are interrelated:
+
+* Get the best performance I can from my team.
+* Make sure that my people have what I need to do a good job.
+* Have a team that feels good about their workplace, their capabilities, and their growth.
+* Be respected as a capable leader.
+
+### The service connection
+
 I don't often end up in fancy restaurants, but when I do, I'm impressed by the service I receive. A few friends have previously worked as servers, so I try to tip generously, with a little extra for the truly exceptional.
 
 This got me thinking: a lot of what makes a good waiter also makes for a good people manager. In any talent-driven organization, your employees are a precious resource, and in many ways can be compared to diners at high-quality restaurants. To get the best results out of them (tips), you need to provide them with exceptional service.
@@ -33,22 +44,25 @@ This concept isn't new. There are great examples, including from the military, i
 
 Bruce Buschell over at [The New York Times](http://boss.blogs.nytimes.com/2009/10/29/one-hundred-things-restaurant-staffers-should-never-do-part-one/) put together a list of *top 100 don'ts* for restaurant staff, and a surprising number of these apply to managers. Here is an abridged, grouped listing, together with my analysis.
 
-### Be available
+### I. Be available
 
 50. *Do not turn on the charm when it’s tip time. Be consistent throughout.*
 77. *Do not disappear.*
 
-**This one is probably the most obvious.** 
+**This one is probably the most obvious.** Being a good manager requires being present; pay attention to what's going on around you. Be there for your people when they need you, not when you need them.
 
-### Know when to get out of the way
+### II. Know when to get out of the way
 
 8. *Do not interrupt a conversation. For any reason. Wait for the right moment.*
 95. *Never hover long enough to make people feel they are being watched or hurried…*
 87. Do not stop your excellent service after the check is presented or paid.
 17. Do not take an empty plate from one guest while others are still eating the same course. Wait, wait, wait.
+
+### III. Watch your words
 40. Never say, “Good choice,” implying that other choices are bad.
 
-### Get feedback from multiple sources, and act on it
+
+### III. Get feedback from multiple sources, and act on it
 
 31. Never remove a plate full of food without asking what went wrong. Obviously, something went wrong.
 14. When you ask, “How’s everything?” or “How was the meal?” listen to the answer and fix whatever is not right.
