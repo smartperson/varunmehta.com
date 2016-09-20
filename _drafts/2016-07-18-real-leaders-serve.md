@@ -44,32 +44,38 @@ This concept isn't new. There are great examples, including from the military, i
 
 Bruce Buschell over at [The New York Times](http://boss.blogs.nytimes.com/2009/10/29/one-hundred-things-restaurant-staffers-should-never-do-part-one/) put together a list of *top 100 don'ts* for restaurant staff, and a surprising number of these apply to managers. Here is an abridged, grouped listing, together with my analysis.
 
-### I. Be available
+### I. Watch your words
 
-50. *Do not turn on the charm when it’s tip time. Be consistent throughout.*
-77. *Do not disappear.*
+* *Never say, “Good choice,” implying that other choices are bad.*
+* *Saying, “No problem” is a problem. It has a tone of insincerity or sarcasm. “My pleasure” or “You’re welcome” will do.*
+* *Do not gossip about co-workers or guests within earshot of guests.*
+
+
+
+### II. Be available
+
+* *Do not turn on the charm when it’s tip time. Be consistent throughout.*
+* *Do not disappear.*
 
 **This one is probably the most obvious.** Being a good manager requires being present; pay attention to what's going on around you. Be there for your people when they need you, not when you need them.
 
-### II. Know when to get out of the way
+### III. Know when to get out of the way
 
-8. *Do not interrupt a conversation. For any reason. Wait for the right moment.*
-95. *Never hover long enough to make people feel they are being watched or hurried…*
-87. Do not stop your excellent service after the check is presented or paid.
-17. Do not take an empty plate from one guest while others are still eating the same course. Wait, wait, wait.
+* *Do not interrupt a conversation. For any reason. Wait for the right moment.*
+* *Never hover long enough to make people feel they are being watched or hurried…*
+* Do not stop your excellent service after the check is presented or paid.
+* Do not take an empty plate from one guest while others are still eating the same course. Wait, wait, wait.
 
-### III. Watch your words
-40. Never say, “Good choice,” implying that other choices are bad.
+**This forms a delicate balancing act when combined with the advice from number I above.** I would try to offer specific feedback, but being highly available without micromanaging is a blog post all on its own. If you have good sources of feedback, you'll know if you're pulling it off, or which way to course-correct your style.
 
+### IV. Get feedback from multiple sources, and act on it
 
-### III. Get feedback from multiple sources, and act on it
-
-31. Never remove a plate full of food without asking what went wrong. Obviously, something went wrong.
-14. When you ask, “How’s everything?” or “How was the meal?” listen to the answer and fix whatever is not right.
-62. Do not fill the water glass every two minutes, or after each sip. You’ll make people nervous.
-96. *Do not say anything after a tip — be it good, bad, indifferent — except, “Thank you very much.”*
-89. Never patronize a guest who has a complaint or suggestion; listen, take it seriously, address it.
-99. *Do not show frustration. Your only mission is to serve. Be patient. It is not easy.*
+* *Never remove a plate full of food without asking what went wrong. Obviously, something went wrong.*
+* *When you ask, “How’s everything?” or “How was the meal?” listen to the answer and fix whatever is not right.*
+* Do not fill the water glass every two minutes, or after each sip. You’ll make people nervous.
+* *Do not say anything after a tip — be it good, bad, indifferent — except, “Thank you very much.”*
+* Never patronize a guest who has a complaint or suggestion; listen, take it seriously, address it.
+* *Do not show frustration. Your only mission is to serve. Be patient. It is not easy.*
 
 
 Bonus Track: As Bill Gates has said, “Your most unhappy customers are your greatest source of learning.”
