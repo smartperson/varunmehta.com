@@ -52,7 +52,7 @@ $on-laptop:        800px;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "bourbon/bourbon",
+        "theme",
         "base",
-        "layout",
-        "theme"
+        "layout"
 ;

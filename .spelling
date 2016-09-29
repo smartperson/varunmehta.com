@@ -1,0 +1,17 @@
+# markdown-spellcheck spelling configuration file
+# Format - lines beginning # are comments
+# global dictionary is at the start, file overrides afterwards
+# one word per line, to define a file override use ' - filename'
+# where filename is relative to this configuration file
+Sinek
+Buschell
+100
+KPMG
+Disqovery
+Varun
+varun
+disqovery.com
+vkm
+ - _posts/2016-09-28-real-leaders-serve.md
+_blank
+don'ts

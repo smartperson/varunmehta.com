@@ -67,6 +67,7 @@ figcaption {
  */
 ul, ol {
     margin-left: $spacing-unit;
+    margin-top: $spacing-unit/2;
 }
 
 li {
@@ -110,17 +111,22 @@ a {
  * Blockquotes
  */
 blockquote {
-  //styling for this comes directly from materialdesign lite
-/*    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
+    color: grey;
+    background-color: #F5F5F5;
+    border-left: 4px solid lightgrey;
+    padding-left: 1rem;
     font-size: 18px;
     letter-spacing: -1px;
     font-style: italic;
-
+    &:before {
+        content: '';
+    };
+    &:after {
+        content: '';
+    };
     > :last-child {
         margin-bottom: 0;
-    }*/
+    }
 }
 
 
