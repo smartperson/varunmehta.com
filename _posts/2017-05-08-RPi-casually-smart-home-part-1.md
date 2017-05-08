@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: Raspberry Pi Zero W: The Casually Smart Home (Part 1)
-subtitle: Adventures in dynamic network devices
+subtitle: Adventures with dynamic network devices
 author: Varun
 image:
   feature: pi-zero-w.jpg
