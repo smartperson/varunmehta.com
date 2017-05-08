@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: Raspberry Pi Zero W: The Casually Smart Home (Part 1)
-subtitle: What you can learn from hospitality and service
+subtitle: Adventures in dynamic network devices
 author: Varun
 image:
   feature: pi-zero-w.jpg
