@@ -20,5 +20,6 @@ gem "bourbon"
 #   gem "jekyll-github-metadata", "~> 1.0"
 # end
 group :jekyll_plugins do
+  gem 'jekyll-twitter-plugin'
   gem 'jekyll-timeago'
 end
