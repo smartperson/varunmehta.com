@@ -24,3 +24,6 @@ github_username:  smartperson
 # Build settings
 markdown: kramdown
 gems: ['jekyll-timeago']
+
+sass:
+    style: compressed
