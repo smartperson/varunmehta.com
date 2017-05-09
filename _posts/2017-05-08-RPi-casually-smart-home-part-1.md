@@ -1,13 +1,13 @@
 ---
 layout: post
 published: true
-title: Raspberry Pi Zero W&#58; The Casually Smart Home (Part 1)
+title: "The Casually Smart Home (Part 1)"
 subtitle: Adventures with dynamic network devices
 author: Varun
-image:
-  feature: pi-zero-w.jpg
-  credit: Adafruit
-  creditlink: https://www.adafruit.com
+image: ../img/pi-zero-w.jpg
+feature: pi-zero-w.jpg
+credit: Adafruit
+creditlink: https://www.adafruit.com
 ---
 
 _Alternate titles include: "Real leaders serve," and "What managers can learn from waiters."_
