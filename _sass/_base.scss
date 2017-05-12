@@ -18,6 +18,13 @@ blockquote {
     font-size: 18px;
     letter-spacing: -1px;
     font-style: italic;
+    
+    &::before {
+        content: none;
+    }
+    &::after {
+        content: none;
+    }
 
     > :last-child {
         margin-bottom: 0;

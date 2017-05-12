@@ -2,6 +2,16 @@
 // Generals styles for material design light elements
 //
 
+.mdl-layout-title {
+    a {
+        color: inherit;
+        text-decoration: inherit;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
 // Page container
 
 .page-content{
@@ -14,7 +24,20 @@
   .mdl-card__title {
     color: #fff;
     height: 176px;
-    background: url('../img/welcome_card.jpg') center / cover;
+    background-blend-mode: color-burn;
+    background-color: #888; //grey
+    position: relative;
+    background-image: url('../img/welcome_card.jpg');
+    background-origin: center;
+    background-size: cover;
+    .mdl-card__title-text a {
+        &:hover {
+            text-decoration: underline;
+        };
+        font-weight: 600;
+        color: inherit;
+        text-decoration: none;
+    }
   }
 
   .mdl-card__supporting-text > span { color: #9F9F9F; }
