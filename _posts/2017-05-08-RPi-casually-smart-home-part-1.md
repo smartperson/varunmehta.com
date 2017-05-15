@@ -9,8 +9,10 @@ creditlink: https://www.adafruit.com
 galleries:
   gallery1:
     pictures:
-      - "sunroom1.jpg"
-      - "sunroom2.jpg"
+      - url: "sunroom2.jpg"
+        caption: "A big sunroom right next to our house"
+      - url: "sunroom1.jpg"
+        caption: "It's a very pleasant place, as long as the weather/sun is good"
 ---
 
 _Overview and quick preview. The start of what should be an entertaining and educational journey. Let's play with Raspberry Pis, and make them do all kinds of fun things to make our lives better. Casually._

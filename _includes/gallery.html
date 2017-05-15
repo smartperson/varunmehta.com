@@ -1,9 +1,13 @@
-{% capture year %}{{ post.date | date: "%Y" }}{% endcapture %}
-{% capture month %}{{ post.date | date: "%MM" }}{% endcapture %}
+{% capture year %}{{ page.date | date: "%Y" }}{% endcapture %}
+{% capture month %}{{ page.date | date: "%m" }}{% endcapture %}
 <div class="mdl-grid">
 {% for picture in page.galleries[include.gallery_id].pictures %}
   <div class="mdl-cell mdl-cell--4-col">
-    {% cloudinary /img/2017/05/sunroom1.jpg %}
+    {% capture picture_url %}/img/{{year}}/{{month}}/{{picture.url}}{% endcapture %}
+    <a href="{{picture_url}}" data-lightbox="{{include.gallery_id}}" title="{{picture.caption}}">
+      {% cloudinary {{picture_url}} %}<br/>
+      hello, image
+    </a>
   </div>
 {% endfor %}
 </div>
