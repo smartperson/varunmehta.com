@@ -1,0 +1,9 @@
+{% capture year %}{{ post.date | date: "%Y" }}{% endcapture %}
+{% capture month %}{{ post.date | date: "%MM" }}{% endcapture %}
+<div class="mdl-grid">
+{% for picture in page.galleries[include.gallery_id].pictures %}
+  <div class="mdl-cell mdl-cell--4-col">
+    {% cloudinary /img/2017/05/sunroom1.jpg %}
+  </div>
+{% endfor %}
+</div>

@@ -27,7 +27,28 @@ pagination_type: default  # values [ ops, default ]
 #    link: www.myawesomelink.com
 
 disqus: false
-disqus_shortname: 'gdgmanagua'
+disqus_shortname: ''
 
 # Build settings
 markdown: kramdown
+
+cloudinary:
+  cloud_name: varun-blog
+  presets:
+    default:
+      min_width: 320
+      max_width: 1600
+      fallback_max_width: 800
+      steps: 5
+      sizes: "(min-width: 50rem) 50rem, 90"
+    onethird:
+      min_width: 110
+      max_width: 535
+      fallback_max_width: 300
+      steps: 3
+      sizes: "(min-width: 50rem) 17rem, 30vw"
+      attributes:
+        class: "one3rd"
+
+gems:
+  - jekyll-cloudinary

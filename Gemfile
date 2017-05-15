@@ -22,4 +22,5 @@ gem "bourbon"
 group :jekyll_plugins do
   gem 'jekyll-twitter-plugin'
   gem 'jekyll-timeago'
+  gem 'jekyll-cloudinary'
 end
