@@ -2,11 +2,18 @@
 {% capture month %}{{ page.date | date: "%m" }}{% endcapture %}
 <div class="mdl-grid">
 {% for picture in page.galleries[include.gallery_id].pictures %}
+  {% if page.galleries[include.gallery_id].pictures.size > 1 %}
   <div class="mdl-cell mdl-cell--4-col">
+  {% else %}
+  <div class="mdl-cell mdl-cell--12-col">
+  {% endif %}
     {% capture picture_url %}/img/{{year}}/{{month}}/{{picture.url}}{% endcapture %}
     <a href="{{picture_url}}" data-lightbox="{{include.gallery_id}}" title="{{picture.caption}}">
-      {% cloudinary {{picture_url}} %}<br/>
-      hello, image
+      {% if site.developer_mode %}
+        <img src="{{picture_url}}"/>
+      {% else %}
+        {% cloudinary {{picture_url}} %}
+      {% endif %}
     </a>
   </div>
 {% endfor %}
