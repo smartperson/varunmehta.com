@@ -1,54 +1,50 @@
 ---
 layout: post
 published: true
-title: "The Casually Smart Home (Part 1)"
+title: "The Casually Smart Home (Part 2)"
 author: Varun
-image: /img/pi-zero-w.jpg
+image: /img/am2322.jpg
 credit: Adafruit
 creditlink: https://www.adafruit.com
 galleries:
-  gallery1:
+  am2322-analyzer:
     pictures:
-      - url: "sunroom2.jpg"
-        caption: "A big sunroom right next to our house"
-      - url: "sunroom1.jpg"
-        caption: "It's a very pleasant place, as long as the weather/sun is good"
-  gallery2:
-    pictures:
-      - url: "pi-location-monitor-diagram-1.png"
-        caption: "Connections for our current hardware setup"
-      - url: "pi-location-monitor-diagram-2.png"
-        caption: "A simplified diagram, that might be easier to understand"
-      - url: "pi-location-monitor-diagram-3.png"
-        caption: "All these Raspberry Pis communicate essential information with each other via UDP broadcast"
+      - url: "am2322-logic-hookup.jpg"
+        caption: "I hooked up my logic analyzer for a little in-situ (in-kitchen) data capture."
+      - url: "am2322-working-overview.png"
+        caption: "This is what the conversation between Pi and AM2322 looks like when everything is working."
+      - url: "am2322-working-request.png"
+        caption: "There's a specific format to use when sending the request "
+      - url: "am2322-working-result.png"
+        caption: "Fun to analyze the results you get manually to verify things make sense."
+      - url: "am2322-broken.png"
+        caption: "Trying to use normal i2c libraries adds an extra write operation that mucks things up."
   galleryPreview:
     pictures:
       - url: "part1-preview2.jpg"
         caption: "My first prototype uses an older Raspberry Pi and bodged wires. Custom dupont cables and connectors make it much cleaner."
 ---
 
-_Overview and quick preview. The start of what should be an entertaining and educational journey. Let's play with Raspberry Pis, and make them do all kinds of fun things to make our lives better. Let's make a little network of Raspberry Pis that keep an eye on the home and toss data back and forth at each other. Casually._
+_Fun with sensors. I had to pick a sensor for my first working location monitors. Why was it a good choice? How much work to get it running?_
 
 {% include gallery.html gallery_id="galleryPreview" %}
 
-This is the part one in a series covering the project I'm working on in my spare time. My hope is to inspire some of you to try something new; maybe even using some of my mistakes to make it easier for yourselves:
+This is the part two in a series covering the project I'm working on in my spare time. My hope is to inspire some of you to try something new; maybe even using some of my mistakes to make it easier for yourselves:
 
-* Part 1: Overview and quick preview ← (you are here)
-* Part 2: [Fun with sensors]({% post_url 2017-05-24-RPi-casually-smart-home-part-2 %})
+* Part 1: [Overview and quick preview]({% post_url 2017-05-15-RPi-casually-smart-home-part-1 %})
+* Part 2: Fun with sensors ← (you are here)
 * Part 3: Displays
 * Part 4: Casual networking
 * Part 5: Bonus features
 * Part 6: Physical constraints
 
-#### Why are you doing this?
+#### Why use AM2322?
 
 I want to know what's happening in other parts of my home without walking around the whole place to check. Last year we built a beautiful detached sunroom in our backyard. Mosquitoes make sitting outside in the summer difficult without some kind of physical barrier. Even though the room has windows on a sunny summer afternoon it can get too hot to use. Conversely, a cloudy autumn evening is too cold. We never know if it's a good time to head to the sunroom without checking the room ourselves, and we'd like to use it as much as possible.
 
-{% include gallery.html gallery_id="gallery1" %}
-
 There are plenty of other applications I'd like to explore: garage doors, doorbells, indoor conditions, remote monitoring, learning, teaching.
 
-#### What is the "casual smart home"?
+#### How do we communicate with it?
 
 You can call it lazy, if you want, but when I build technology for my home, there are some principles I try to stick to:
 
@@ -57,7 +53,9 @@ You can call it lazy, if you want, but when I build technology for my home, ther
 3. **Dynamic configuration.** Figure out as much about the environment as possible without manual entry. If a new device appears, add it. If an old device disappears, remove it.
 4. **No apps required.** Information at a glance. Don't make me use a app to find something out.
 
-#### The  priorities
+#### It's i2c-ish
+
+{% include gallery.html gallery_id="am2322-analyzer" %}
 
 **MUST**
 
@@ -74,7 +72,7 @@ You can call it lazy, if you want, but when I build technology for my home, ther
 4. Allow checking conditions at a distance.
 5. Produce sounds as appropriate.
 
-#### Materials used
+#### Useful code
 
 I was originally planning to use a bunch of ESP8266 boards, but then the Raspberry Pi Zero W went on sale for $10, and my local Micro Center has plenty in stock.
 
@@ -90,7 +88,7 @@ Optional, but recommended:
 * [DIY Dupont connector kit](https://www.amazon.com/gp/product/B01G0I0ZZK/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01G0I0ZZK&linkCode=as2&tag=varmeh-20&linkId=07190cf2c194064640c8751404b41989)
 * Appropriate power supplies (I got some [5V@15A](https://www.aliexpress.com/item/5v-15a-switching-power-supply-ac-dc-adapter-5v15a-5v10a-5v12a-transformer-adapter/32213159343.html?spm=2114.13010608.0.0.KNmYMn), you'll see why later) and [connectors](https://www.aliexpress.com/item/MYLB-10-Pcs-CCTV-Cameras-2-1mm-x-5-5mm-Female-Male-DC-Power-Plug-Adapter/32734002576.html?spm=2114.13010608.0.0.KNmYMn) ($5-$20)
 
-#### Overview
+#### A note on logic analyzers
 
 The hardware is pretty boring for now, but it gets the job done. We use the Inter-Integrated Circuit (I2C) protocol, since with just two wires (data and clock) we can send and receive data from our temperature sensor and our display. It's pretty fast, easy to understand, and compatible across different voltages (3.3V, 5V) without conversion. The sensor uses a tight spacing for the pins (1.25mm), so those 4-pin connectors come in handy. The sensor is powered from output pin 7 on the Pi - which we'll discuss in a future blog post.
 
@@ -106,17 +104,6 @@ The software is much more interesting. It's pretty much all python.
 4. It broadcasts a small packet which includes its name, conditions, timestamp, and 32x32 icon. Images and graphics will be covered in a future blog post.
 5. It receives multicasts from other Pis and updates its list of known devices.
 6. If it hasn't heard from another Pi in an hour, the Pi automatically removes it from the list.
-
-##### More casual
-
-With casual principles, I don't want to deal with updates, individual configs, SSH keys, and manual restarts. I read a blog post describing a project that used [resin.io](http://resin.io), and I am very happy with how much easier it made the process. Because of resin.io, I can:
-
-* `git push` my python code updates to all of my devices at once.
-* Check the health status of each Pi individually.
-* Reconfigure environment variables through the web, and have the app restart automatically.
-* SSH into any device using the website or a shared SSH key.
-
-I can't afford their paid service, so for the time being I'll have to stay under 5 devices; that's okay for now.
 
 #### What's next
 
