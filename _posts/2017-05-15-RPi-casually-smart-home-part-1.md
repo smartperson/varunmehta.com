@@ -34,7 +34,7 @@ _Overview and quick preview. The start of what should be an entertaining and edu
 This is the part one in a series covering the project I'm working on in my spare time. My hope is to inspire some of you to try something new; maybe even using some of my mistakes to make it easier for yourselves:
 
 * Part 1: Overview and quick preview ← (you are here)
-* Part 2: [Fun with sensors]({% post_url 2017-05-24-RPi-casually-smart-home-part-2 %})
+* Part 2: [Fun with sensors]()
 * Part 3: Displays
 * Part 4: Casual networking
 * Part 5: Bonus features

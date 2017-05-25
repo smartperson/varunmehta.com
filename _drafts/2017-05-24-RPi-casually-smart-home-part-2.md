@@ -23,6 +23,7 @@ galleries:
     pictures:
       - url: "part1-preview2.jpg"
         caption: "My first prototype uses an older Raspberry Pi and bodged wires. Custom dupont cables and connectors make it much cleaner."
+remember: {% post_url 2017-05-24-RPi-casually-smart-home-part-2 %}
 ---
 
 _Fun with sensors. I had to pick a sensor for my first working location monitors. Why was it a good choice? How much work to get it running?_
