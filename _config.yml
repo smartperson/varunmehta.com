@@ -7,24 +7,12 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://varunmehta.com" # the base hostname & protocol for your site
 twitter_username: smartperson
 github_username:  smartperson
-# google_play: 'GDGX'
-# google_plus_com: '109485346959707049693'  # Community link
-# google_plus_per: '+GDGManagua'  #Personal link
-# facebook_app_id: 12345
 search_enabled: false
 
 # Layout settings
 header_type: default  # values [ drawer, default ]
 post_type: highlight    # values [ highlight, default ]
 pagination_type: default  # values [ ops, default ]
-
-#more_vert:
-#  - name: Cool Option 1
-#    link: www.myawesomelink.com
-#  - name: Cool Option 2
-#    link: www.myawesomelink.com
-#  - name: Cool Option 3
-#    link: www.myawesomelink.com
 
 disqus: false
 disqus_shortname: ''
