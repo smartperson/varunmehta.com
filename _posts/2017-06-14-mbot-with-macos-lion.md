@@ -44,11 +44,11 @@ The [website](http://www.mblock.cc/download/) for mBlock simply says "latest OSX
 
 {% include gallery.html gallery_id="mbot-ch340g" %}
 
-Programming the mBot requires you install an 'Arduino Driver'. Unfortunately even after installing the driver, the mBot is not recognized. The mBot and some other budget Arduino-compatible devices uses very cheap CH340/CH341 USB->Serial converters instead of the higher-quality FTDI chips. It turns out the driver included with mBlock.app only works on **MacOS X 10.9 and above**.
+Programming the mBot requires you install an 'Arduino Driver'. Unfortunately even after installing the driver, the mBot is not recognized. The mBot and some other budget Arduino-ish devices use very cheap CH340/CH341 USB->Serial converters instead of the higher-quality FTDI chips. It turns out the driver included with mBlock.app only works on **MacOS X 10.9 and above**.
 
 Rather than trying to get [MacPostFactor](http://www.osxhackers.net/macpostfactor.html) running on his computer (a MacBook 4,1), I was determined to find a driver for this chip that would work on older hardware. USB->Serial converters have been around for ages, there *has* to be a compatible driver out there, right?
 
-Fortunately there is; however, it does feel sketchy. There is a Russian hobbyist electronics website that has a [page devoted to the CH340G](http://www.5v.ru/ch340g.htm), and includes an older version of the same driver, 1.2. This one installs fine on MacOS 10.7. **Disclaimer:** I'm not responsible for this driver messing up you're computer. I wish that was enough to get everything working, but unfortunately it isn't so simple.
+Fortunately there is; however, it does feel sketchy. There is a Russian hobbyist electronics website that has a [page devoted to the CH340G](http://www.5v.ru/ch340g.htm), and includes an older version of the same driver, 1.2. This one installs fine on MacOS 10.7. **Disclaimer:** I'm not responsible for this driver messing up your computer. I wish that was enough to get everything working, but unfortunately it isn't so simple.
 
 #### New serial problems
 
