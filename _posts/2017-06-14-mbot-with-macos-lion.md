@@ -66,7 +66,7 @@ As you see above, the driver doesn't work for the most frustrating reasons. The 
 
 #### Super serial solutions
 
-mBlock.app includes a full copy of Arduino.app, version 1.6.5-r5. You can modify the file at `mBlock_v3.4.8.app/Contents/Resources/Arduino/Arduino.app/Contents/Java/hardware/arduino/avr/platform.txt` to wrap the [`upload.pattern`](https://github.com/arduino/Arduino/blob/8d955c8be12731a4df7064e04606399c2cdad03b/hardware/arduino/avr/platform.txt#L105)'s `-P{serial.port}` option in double quotes: `"-P{serial.port}"`.
+mBlock.app includes a full copy of Arduino.app, version 1.6.5-r5. You can modify the file at `mBlock_v3.4.8.app/Contents/Resources/Arduino/Arduino.app/Contents/Java/hardware/arduino/avr/platform.txt` to wrap the [`upload.pattern`](https://github.com/arduino/Arduino/blob/8d955c8be12731a4df7064e04606399c2cdad03b/hardware/arduino/avr/platform.txt#L105)'s `-P{serial.port}` option in double quotes: `"-P{serial.port}"`. This causes the path to be passed successfully down the entire toolchain.
 
 #### Finally
 
