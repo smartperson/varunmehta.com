@@ -20,6 +20,12 @@ galleries:
         caption: "The LCD uses an 8-pin ribbon cable, which I didn't expect."
       - url: "z680-connections-2.jpg"
         caption: "This is the connector on the control pod's main board. The mounted it at an usual angle, probably to fit the LCD module right on top of it. On the left you can see the wires coming from the amp/sub via the d-sub connector."
+  z680-arduino-serial:
+    pictures:
+      - url: "z680-arduino-serial-1.gif"
+        caption: "It's really fun to see what should be on the internal LCD showing up on my Mac's terminal, instead."
+      - url: "z680-arduino-serial-2.gif"
+        caption: "I can send over commands to hide the cursor, so it looks even better on my Mac. However, I cannot create custom characters, so the volume controls don't look perfect on the PC terminal."
 ---
 I'm not ready to give up on these speakers just yet. They sound great, but the control LCD is messed up. I wonder if I can get it working even better than before. I ended up reverse engineering some mysterious components, and hopefully my experience can teach you a thing or two about the process.
 
@@ -158,6 +164,8 @@ When we decode everything properly, `D` is `44` and `E` is `45`. It's all ASCII!
 * The second low nybble is the high nybble of the "Actual" data.
 * Command `08` is supposed to move the cursor to position 0 of DDRAM, but it actually moves to position 0 of CGRAM.
 
+{% include image.md image_url="/img/2017/09/z680-bytes-nybbles.png" %}
+
 #### Replacement plan
 We know pretty much everything about how this LCD and control pod communicate. After searching around, I could not find any serial character LCDs which use the same protocol, which means a simple replacement is impossible.
 
@@ -166,9 +174,26 @@ I'm still going to replace it, but with a parallel character LCD. I'll need to m
 #### Arduino
 A few years back I picked up a bunch of [RBBB Arduinos](https://moderndevice.com/product/rbbb-kit/). They're great as cheap, fully-featured, and *tiny* Arduino-compatible systems. They do not have a USB UART on-board, to save money, but a single [USB BUB](https://moderndevice.com/product/usb-bub-ii/) adapter can be used for both programming and Arduino <-> PC serial communication.
 
+{% include image.md image_url="/img/2017/09/z680-arduino-connections.jpg" %}
 
+The RBBB can be cut down a lot, so it should be small enough to fit inside the control pod, along with a replacement LCD module. The broken LCD is very thick, so hopefully we'll figure out a better way of using the available space. I set it up as follows:
+
+* Control Pod Pin 1 (Vcc) to RBBB 5V Input
+* Control Pod Pin 2 (GND) to RBBB GND
+* Control Pod Pin 4 (CS) to RBBB Slave Select (SS)
+* Control Pod Pin 5 (MOSI) to RBBB MOSI
+* Control Pod Pin 6 (CLK) to RBBB SCLK
+
+I have the Arduino converting the [hd44780 cursor movement codes](http://www.dinceraydin.com/lcd/commands.htm) into [ANSI terminal codes](http://ascii-table.com/ansi-escape-sequences.php). This can work very well, but it means that we can't use the standard Arduino serial console. Instead we have to connect with a terminal program, using a command like `screen /dev/cu.arduinoserial 115200`.
+
+{% include gallery.html gallery_id="z680-arduino-serial" %}
 
 #### Next steps & code
+Code for this project is available as a [GitHub repository](https://github.com/smartperson/Logitech-Z680-LCD-Translator). I'll add a README shortly.
+
+This has been a blast to reverse engineer; we have figured everything out about this LCD system, and we can replace it with whatever we want.
+
+The plan is to get the Arduino working reliably with a parallel character LCD, then somehow fit it all inside the control pod. I'm looking at 2x20 displays to find one that will fit and work well. I think I'll try and find an OLED; I'm tired of backlights, and OLED feels more like the VFDs of old.
 
 #### Who's Varun?
 
