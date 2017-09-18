@@ -120,7 +120,7 @@ along with a stream of bytes flowing across the data line. You get some `F8` seq
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 |A0 20| 60 60|60 60|A0 60|C0 60|20 E0|50 C0|00 40|20 20|A0 60|20 E0|A0 60|C0 60|20 E0|90 60|70 60|E0 60|70 40|70 40|70 40|
 
-We're on to something; we've found some consistency. Each time we see the letter `i`, for example, we get `90 60`. **But this still doesn't make sense.** I would think that `D` and `E` would have adjacent hexadecimal values, but they are `20 20` and `A0 20`, respectively. We could throw away the second half of each byte, since that's always `0`, but that still gives us `22` and `A2`. What are we going wrong?
+We're on to something; we've found some consistency. Each time we see the letter `i`, for example, we get `90 60`. **But this still doesn't make sense.** I would think that `D` and `E` would have adjacent hexadecimal values, but they are `20 20` and `A0 20`, respectively. We could throw away the second half of each byte, since that's always `0`, but that still gives us `22` and `A2`. What are we doing wrong?
 
 #### Take a step back
 I've been interpreting all the data from the logic analyzer as hexadecimal values, but what if we're looking at it the wrong way? I break down some of the letters into hex and binary, so we are looking directly at the raw MOSI and CLK pulses. We'll still throw away the half-bytes that are always `0`
@@ -187,6 +187,8 @@ The RBBB can be cut down a lot, so it should be small enough to fit inside the c
 I have the Arduino converting the [hd44780 cursor movement codes](http://www.dinceraydin.com/lcd/commands.htm) into [ANSI terminal codes](http://ascii-table.com/ansi-escape-sequences.php). This can work very well, but it means that we can't use the standard Arduino serial console. Instead we have to connect with a terminal program, using a command like `screen /dev/cu.arduinoserial 115200`.
 
 {% include gallery.html gallery_id="z680-arduino-serial" %}
+
+It was a little difficult to find an Arduino SPI slave example, as it is not part of the default Serial library for the platform. When I manipulate the knobs and buttons on the control pod, it's fun to see the information being updated on my computer.
 
 #### Next steps & code
 Code for this project is available as a [GitHub repository](https://github.com/smartperson/Logitech-Z680-LCD-Translator). I'll add a README shortly.
