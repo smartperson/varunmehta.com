@@ -19,7 +19,7 @@ galleries:
       - url: "z680-connections-1.jpg"
         caption: "The LCD uses an 8-pin ribbon cable, which I didn't expect."
       - url: "z680-connections-2.jpg"
-        caption: "This is the connector on the control pod's main board. The mounted it at an usual angle, probably to fit the LCD module right on top of it. On the left you can see the wires coming from the amp/sub via the d-sub connector."
+        caption: "This is the connector on the control pod's main board. They mounted it at an unusual angle, probably to fit the LCD module right on top of it. On the left you can see the wires coming from the amp/sub via the d-sub connector."
   z680-arduino-serial:
     pictures:
       - url: "z680-arduino-serial-1.gif"
