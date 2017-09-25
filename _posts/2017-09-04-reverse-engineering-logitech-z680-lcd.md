@@ -29,6 +29,8 @@ galleries:
 ---
 I'm not ready to give up on these speakers just yet. They sound great, but the control LCD is messed up. I wonder if I can get it working even better than before. I ended up reverse engineering some mysterious components, and hopefully my experience can teach you a thing or two about the process.
 
+**Update:** [Part 2]({% post_url 2017-09-24-reverse-engineering-logitech-z680-lcd-2 %}) is now available.
+
 <!--{% include gallery.html gallery_id="my-macpro" %}-->
 
 * TOC
@@ -61,7 +63,7 @@ I took the control pod apart, and I learned:
 Fixing the existing display appears to be impossible, but can I replace it? The first step in replacing it will be to understand how the LCD communicates. If I can learn more about it, I might be able to find a direct replacement. The LCD module is labeled as being manufactured by VDS. Some quick searches reveal that [several](http://www.electro-tech-online.com/threads/replacing-lcd-display-in-control-pod.128012/) other [people](http://www.dslreports.com/forum/r15427913-Can-I-change-this-LCD-Display) have run into the same problem, and have had no luck in finding a replacement. In fact, the manufacturer, VDS, has since gone out of business. I'm going to have to reverse engineer the LCD protocol in order to make any progress.
 
 #### First guesses
-This LCD is clearly a character LCD, used specifically for the display of textual information rather than graphics. A very common protocol used for character LCDs is the 4/8-bit parallell one used in the [Hitachi HD44780](https://en.wikipedia.org/wiki/Hitachi_HD44780_LCD_controller) controller chip from 1987. That design has been copied by pretty much everyone else making similar displays. I would guess that this LCD is also using that protocol. If so, all I have to do is identify which pins are being used for which purpose. Since we only have 8 pins, I would expect:
+This LCD is clearly a character LCD, used specifically for the display of textual information rather than graphics. A very common protocol used for character LCDs is the 4/8-bit parallel one used in the [Hitachi HD44780](https://en.wikipedia.org/wiki/Hitachi_HD44780_LCD_controller) controller chip from 1987. That design has been copied by pretty much everyone else making similar displays. I would guess that this LCD is also using that protocol. If so, all I have to do is identify which pins are being used for which purpose. Since we only have 8 pins, I would expect:
 
 * Vcc pin, probably 5V
 * GND pin
