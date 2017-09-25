@@ -173,7 +173,7 @@ Getting my STK500 to flash the bootloader was unpleasant. I'll spare the details
 
 {% include image.md image_url="/img/2017/09/z680-arduino-poweron-ready-1-optiboot.png" %}
 
-**Amazing, just flashing optiboot reduced startup time from 1.5s to 65 milliseconds!** Before trying anything else, I put my normal code back on the Arduino, and yes! The system starts up quickly enough to receive all of the CGRAM data from the control pod! Everything works! That's how you I took the yellow OLED pictures you saw earlier in the blog post.
+**Amazing, just flashing optiboot reduced startup time from 1.5s to 65 milliseconds!** Before trying anything else, I put my normal code back on the Arduino, and yes! The system starts up quickly enough to receive all of the CGRAM data from the control pod! Everything works! That's how I took the yellow OLED pictures you saw earlier in the blog post.
 
 #### Next steps & code
 Code for this project is available as a [GitHub repository](https://github.com/smartperson/Logitech-Z680-LCD-Translator). I created my own version of LiquidCrystal that is designed for the NHD Character OLEDs instead. It's very messy and not ready for primetime. When it is, I'll spin it off into a proper Arduino library with its own github repo.
