@@ -9,8 +9,15 @@ ruby RUBY_VERSION
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "3.6.3"
+gem "jekyll" #, "3.6.3"
 gem "bourbon"
+group :new_ruby_reqs do
+  gem  "webrick"
+  gem "kramdown-parser-gfm"
+  gem "csv"
+  gem "base64"
+end
+
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
