@@ -1,12 +1,13 @@
 # Site settings
 title: The Corner Datastore
-email: smartperson@gmail.com
+email: me@varunmehta.com
 description: > # this means to ignore newlines until "baseurl:"
   Varun's blog. A place for blogging with blogs.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://varunmehta.com" # the base hostname & protocol for your site
-twitter_username: smartperson
 github_username:  smartperson
+mastodon_url: https://fosstodon.org/@smartperson
+mastodon_username: smartperson
 search_enabled: false
 
 # Layout settings

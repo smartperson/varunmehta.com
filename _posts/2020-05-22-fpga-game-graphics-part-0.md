@@ -80,4 +80,4 @@ This should be a fun time! I'll add more posts as I work out the rest of the sys
 
 &mdash;&nbsp;Varun
 
-_Who's Varun? I work in Product at [ALICE](https://alice-app.com), and I was previously founder of an HR tech startup [Disqovery](http://disqovery.com). I have worn many hats, and I like making things. I also like talking business. You can reach me at [smartperson@gmail.com](mailto:smartperson@gmail.com), [@smartperson](https://twitter.com/smartperson), [Github](https://github.com/smartperson), and [LinkedIn](https://linkedin.com/in/varunkmehta)._
+_Who's Varun? I work in Product at [ALICE](https://alice-app.com), and I was previously founder of an HR tech startup [Disqovery](http://disqovery.com). I have worn many hats, and I like making things. I also like talking business. You can reach me at [me@varunmehta.com](mailto:me@varunmehta.com), [Mastodon](https://fosstodon.org/@smartperson), [Github](https://github.com/smartperson), and [LinkedIn](https://linkedin.com/in/varunkmehta)._

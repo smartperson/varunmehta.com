@@ -3,7 +3,7 @@ layout: page
 title: Projects
 permalink: /projects/
 ---
-Just a few projects I have worked on that might be of interest. If you want to chat about these projects or have an idea for something cool to work on, [drop me a line](mailto:smartperson@gmail.com)!
+Just a few projects I have worked on that might be of interest. If you want to chat about these projects or have an idea for something cool to work on, [drop me a line](mailto:me@varunmehta.com)!
 
 My startup Disqovery:
 * Super-quick [video demo](https://www.youtube.com/watch?v=FMkolgLDcog)!

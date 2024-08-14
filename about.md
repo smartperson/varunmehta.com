@@ -13,4 +13,4 @@ I graduated in 2007 with a BS cum laude in Computer Engineering from Columbia Un
 
 My personal interests include enjoying music, playing bass guitar, maker culture, microcontrollers and embedded devices, and preparing and enjoying fine food and drink. I have traveled through much of the United States as well as parts of India, Iceland, and China.
 
-You can connect with me via [LinkedIn](https://linkedin.com/in/varunkmehta), [Twitter](https://twitter.com/smartperson), [Github](https://github.com/smartperson) or [email](mailto:smartperson@gmail.com).
+You can connect with me via [LinkedIn](https://linkedin.com/in/varunkmehta), [Mastodon](https://fosstodon.org/@smartperson), [Github](https://github.com/smartperson) or [email](mailto:me@varunmehta.com).
