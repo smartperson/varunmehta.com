@@ -45,7 +45,7 @@ It does make tiny bubbles, which folks on YouTube have documented in their video
 1. 0.4 mol, since peroxide weighs 32g per mol
 1. \\(2H_2O \longrightarrow 2H_2O + O_2\\), assuming all of the peroxide breaks down, instead of reacting with organic compounds in the water.
 1. That's 0.4 mol water, and 0.2 mol oxygen
-1. It will turn into ~7g of water (2 H₂O = 36g/mol), and 6g of oxygen (O₂ = 32g/mol).
+1. It will turn into ~7g of water (H₂O = 18g/mol), and 6g of oxygen (O₂ = 32g/mol).
 1. Fish like 5-8ppm of dissolved O₂. [Atlas Scientific](https://atlas-scientific.com/blog/dissolved-oxygen-in-water-ppm-for-fish/)
 1. In a 50 gallon tank (10.5mol H₂O), we'd want to have 0.05mol to 0.08mol of dissolved oxygen.
 1. Which is 1.6g to 2.5g of O₂ continuously available in the water.
