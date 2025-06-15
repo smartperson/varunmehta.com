@@ -14,7 +14,9 @@ galleries:
         caption: "Thumbnail showing a small Sochting Oxydator YT: Shrimps & Snails: https://youtu.be/qVg-P1mZ5jg"
 ---
 
-**This is mostly copied from a YouTube comment I posted a few weeks ago. Brought onto the blog because Google can be capricious, and to improve discoverability.** There are a bunch of claims out there about the Söchting Oxydator, about how it can boost oxygen levels, clarify aquarium water, and keep your fish healthier. But is it even _possible_ for it to live up to the hype? Based on my quick back-of-the-envelope calculations, I think so.
+**This is mostly copied from a YouTube comment I posted a few weeks ago. Brought onto the blog because Google can be capricious, and to improve discoverability.** There are a bunch of claims out there about the Söchting Oxydator, about how it can boost oxygen levels, clarify aquarium water, and keep your fish healthier.
+
+But is it even _possible_ for it to live up to the hype? Based on my quick back-of-the-envelope calculations, I think so.
 
 **To be clear, I am not a chemist, just a general nerd. Someone more knowledgeable could and should think through this.**
 
