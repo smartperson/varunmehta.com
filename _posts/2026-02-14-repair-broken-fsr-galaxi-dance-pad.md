@@ -18,7 +18,7 @@ galleries:
         caption: "tape it all together (later used hot glue)"
 ---
 
-I still enjoy Dance Dance Revolution (DDR), but (good) hardware is still hard to find. Ordered a [Glaxi Dance Pad](https://www.galaxidance.com/). Unfortunately, it broke after a few days of use -- and the guy that runs the company has not been responsive. One of the arrows stopped responding at all.
+I still enjoy Dance Dance Revolution (DDR), but (good) hardware is still hard to find. Ordered a [Galaxi Dance Pad](https://www.galaxidance.com/). Unfortunately, it broke after a few days of use -- and the guy that runs the company has not been responsive. One of the arrows stopped responding at all.
 
 There was no obvious disconnect with the wiring inside. On a recommendation, I purchased [this replacement](https://buyinterlinkelectronics.com/collections/x-ux-force-sensors/products/fsr-ux-408-300mm-length) FSR strip, placed it between the aluminum bar and rubber strip, and then had to figure out how to securely connect the metal pins to the rest of the wiring for the system.
 
